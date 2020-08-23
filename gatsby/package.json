@@ -15,8 +15,7 @@
   ],
   "license": "MIT",
   "scripts": {
-    "clean": "del -f \"../!(gatsby)*\" ",
-    "build": "gatsby build && npm run clean && cp -a public/* ../ && rm -rf public",
+    "build": "gatsby build",
     "dev": "gatsby clean && gatsby develop",
     "format": "prettier --write \"src/**/*.js\"",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
@@ -47,7 +46,6 @@
     "babel-eslint": "^10.0.1",
     "babel-preset-gatsby": "^0.1.6",
     "cssnano": "^4.1.8",
-    "del-cli": "^3.0.1",
     "eslint": "^5.12.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-prettier": "^3.3.0",
